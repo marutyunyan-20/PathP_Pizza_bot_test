@@ -2,14 +2,14 @@ from aiogram import F, types, Router
 from aiogram.filters import CommandStart
 
 from sqlalchemy.ext.asyncio import AsyncSession
-from database.orm_query import (
+from app.database.orm_query import (
     orm_add_to_cart,
     orm_add_user,
 )
 
-from filters.chat_types import ChatTypeFilter
-from handlers.menu_processing import get_menu_content
-from keyboards.inline import get_callback_btns, MenuCallBack
+from app.filters.chat_types import ChatTypeFilter
+from app.handlers.menu_processing import get_menu_content
+from app.keyboards.inline import get_callback_btns, MenuCallBack
 
 
 

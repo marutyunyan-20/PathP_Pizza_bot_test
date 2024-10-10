@@ -5,7 +5,7 @@ from aiogram.fsm.state import State, StatesGroup
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from database.orm_query import (
+from app.database.orm_query import (
     orm_change_banner_image,
     orm_get_categories,
     orm_add_product,
@@ -16,7 +16,7 @@ from database.orm_query import (
     orm_update_product,
 )
 
-from filters.chat_types import ChatTypeFilter, IsAdmin
+from app.filters.chat_types import ChatTypeFilter, IsAdmin
 
 from app.keyboards.inline import get_callback_btns
 from app.keyboards.reply import get_keyboard

@@ -3,7 +3,7 @@ from sqlalchemy import select, update, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
-from database.models import Banner, Cart, Category, Product, User
+from app.database.models import Banner, Cart, Category, Product, User
 
 
 ############### Работа с баннерами (информационными страницами) ###############
